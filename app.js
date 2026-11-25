@@ -667,7 +667,7 @@
 // alert(greeting);
 
 // 7. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements.
-var input_time = Number(prompt("Enter time in 24-hour format (e.g., 1900 for 7pm):"));
+// var input_time = Number(prompt("Enter time in 24-hour format (e.g., 1900 for 7pm):"));
 
 // if (input_time >= 0 && input_time < 1200) {
 //     alert("Good morning!");
@@ -681,15 +681,376 @@ var input_time = Number(prompt("Enter time in 24-hour format (e.g., 1900 for 7pm
 //     alert("Invalid time format! Please enter a value between 0000 and 2359.");
 // }
 
-// Task 7:
 
-// Task 8:
+// // ____________________________ Chapter 14 - 16 --> Tasks ____________________________
 
-// Task 9:
+// Task 1: Declare an empty array using JS literal notation to store student names in future.
+// var empty_arr = [];
+// console.log(empty_arr);
 
-// Task 10:
 
-// Task 11:
+// Task 2: Declare an empty array using JS object notation to store student names in future.
+// var arr_1 = [];
+// arr_1 = [];
+// arr_1.push("data1", "data2")
+// console.log(arr_1);
 
+// Task 3: Declare and initialize a strings array.
+// var arr_2 = ["This is an string arr", "Ahmed", "Khan", "Hasan"];
+// console.log(arr_2);
+
+// Task 4: Declare and initialize a numbers array.
+// var arr_3 = [1, 2, 3, 4];
+// console.log(arr_3);
+
+// Task 5: Declare and initialize a boolean array.
+// var bolean_arr = [true, false, true, true]
+// console.log(bolean_arr);
+
+// Task 6: Declare and initialize a mixed array.
+// var mixed_arr = [1, 5, 7, "Hamid", "jhon", "Abraham", true, false, true];
+// console.log(mixed_arr);
+
+// Task 7: Declare and Initialize an array and store available education qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). Show the listed qualifications in your browser like:
+// Qualifications:
+// 1. SSC
+// 2. HSC
+// 3. BCS
+// 4. BS
+// 5. BCOM
+// 6. MS
+// 7. M. Phil.
+// 8. PhD
+
+// var Qualification_In_Pakistan = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phill", "PHD"];
+// console.log(Qualification_In_Pakistan);
+
+
+// Task 8: Write a program to store 3 student names in an array.Take another array to store score of these three students.
+// var student_name = ["Michael", "John", "Tony"]
+// console.log(student_name);
+
+//  Assume that total marks are 500 for each student, display the scores & percentages of students like:
+// Score of Michael is 320. Percentage: 64%
+// Score of John is 230. Percentage: 46%
+// Score of Tony is 480. Percentage: 96%
+// var Score_or_percentage_of_students = [
+//     'Score of Micheal is : 320. Percentage :' + 320/500*100, 
+//     'Score of John is : 320. Percentage :' + 230/500*100,
+//     'Score of Tony is : 320. Percentage :' + 480/500*100
+// ]
+// console.log(Score_or_percentage_of_students);
+
+
+// Task 9: Initialize an array with color names. Display the array elements in your browser.
+// var color_arr = ["Red", "Yellow", "Orange", "Pale-Green", "Deep-Red"]
+// console.log(color_arr);
+
+// a. Ask the user what color he/she wants to add to the beginning & add that color to the beginning of the array. Display the updated array in your browser.
+// color_arr.unshift(prompt('Enter color name that u want to add in the begining of the array', "Green"))
+// console.log(color_arr);
+
+
+// b. Ask the user what color he/she wants to add to the end & add that color to the end of the array. Display the updated array in your browser.
+// color_arr.push(prompt('Enter color name that u want to add in the end of the array', "Pink"))
+// console.log(color_arr);
+
+// c. Add two more color to the beginning of the array. Display the updated array in your browser.
+// color_arr.unshift("Dark-Green", "Voilet")
+// console.log(color_arr);
+
+
+// d. Delete the first color in the array. Display the updated array in your browser.
+// color_arr.shift()
+// console.log(color_arr);
+
+// e. Delete the last color in the array. Display the updated array in your browser.
+// color_arr.pop()
+// console.log(color_arr);
+
+// f. Ask the user at which index he/she wants to add a color & color name. Then add the color to desired position/index. . Display the updated array in your browser.
+// Ask the user for the index position (convert to a number using + or Number())
+// var index = +prompt("At which index do you want to add a color?", "2");
+
+// color name from user
+// var colorName = prompt("Enter the color name you want to add:", "Yellow");
+
+// Add the color at the desired index (0 means delete 0 items)
+// color_arr.splice(index, 0, colorName);
+
+// console.log(color_arr);
+
+// g. Ask the user at which index he/she wants to delete color(s) & how many colors he/she wants to delete. Then remove the same number of color(s) from user-defined position/index. . Display the updated array in your browser.
+// color_arr.splice(prompt("At which index you wants to delete color form the array", 1), prompt("how many colors you want to delete from choosen index", 2))
+// console.log(color_arr);
+
+// Task 10: Write a program to store student scores in an array & sort the array in ascending order using Array’s sort method.
+// Scores of Students : 320,230,480,120
+// Ordered Scores of Students : 120,230,320,480
+// var student_scores = [320, 230, 480, 120]
+// console.log(student_scores);
+// student_scores.sort()
+// console.log(student_scores);
+
+
+
+// Task 11: Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
+// Cities list:
+// Karachi,Lahore,Islamabad,Quetta,Peshawar
+var city_names = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"]
+
+// Selected cities list:
+// Islamabad,Quetta
+// var selected_city_names = city_names.slice(2,city_names.length - 1)
+// console.log(selected_city_names);
+
+// Task 12: Write a program to create a single string from the below mentioned array: 
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)
+// Array:
+// This,is,my,cat
+// String:
+// This is my cat
+var arr = ["This", "is", "my", "cat"];
+// console.log(arr);
+var new_joint_arr = arr.join(" ")
+// console.log(new_joint_arr);
+
+// Task 13: Create a new array. Store values one by one in such a way that you can access the values in the order in which they were stored. (FIFO-First In First Out)
+// Devices:
+// keyboard,mouse,printer,monitor
+// Out:
+// keyboard
+// Out:
+// mouse
+// Out:
+// printer
+// Out:
+// monitor
+// var FIFO_arr = ["keyboard", "mouse", "printer", "monitor"]
+// console.log(FIFO_arr.shift());
+// console.log(FIFO_arr.shift());
+// console.log(FIFO_arr.shift());
+// console.log(FIFO_arr.shift());
+
+// Task 14: Create a new array. Store values one by one in such a way that you can access the values in reverse order. (Last InFirst Out)
+// Devices:
+// keyboard,mouse,printer,monitor
+// Out:
+// monitor
+// Out:
+// printer
+// Out:
+// mouse
+// Out:
+// keyboard
+
+// var LIFO_arr = ["keyboard", "mouse", "printer", "monitor"]
+// console.log(LIFO_arr.pop());
+// console.log(LIFO_arr.pop());
+// console.log(LIFO_arr.pop());
+// console.log(LIFO_arr.pop());
+
+// Task 15: Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array. Display the following dropdown/select menu in your browser using document.write() method:
+
+
+
+// // ____________________________ Chapter 17 - 20 --> Tasks ____________________________
+// Task 1: Declare and initialize an empty multidimensional array.
+// (Array of arrays)
+var multiArray = [[], [], []];
+
+// Task 2: Declare and initialize a multidimensional array representing the following matrix:
+// 0 1 2 3
+// 1 0 1 2
+// 2 1 0 1z
+var arr2 = [[0, 1, 2, 3],[1, 0, 1, 2],[2, 1, 0, 1]];
+// console.log(arr2);
+
+
+// Task 3: Write a program to print numeric counting from 1 to 10.
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+
+// for (var k = 1; k < 11; k++) {
+//     console.log(k);   
+// }
+
+// Task 4: Write a program to print multiplication table of any number using for loop. Table number & length should be taken as an input from user.
+// Prompt from user
+// Enter a number to show its multiplication table
+// Enter length multiplication table
+// Output:
+// Multiplication table of 2
+// Length 15
+// 2 x 1 = 2
+// 2 x 2 = 4
+// 2 x 3 = 6
+// 2 x 4 = 8
+// 2 x 5 = 10
+// 2 x 6 = 12
+// 2 x 7 = 14
+// 2 x 8 = 16
+// 2 x 9 = 18
+// 2 x 10 = 20
+// 2 x 11 = 22
+// 2 x 12 = 24
+// 2 x 13 = 26
+// 2 x 14 = 28
+// 2 x 15 = 30
+
+// var table_number_From_user = Number(prompt("Enter a table number that u want to see", 2));
+// var length_of_table = +prompt("Enter table length in number that u want to see")
+
+// for (var k = 1 ; k <= length_of_table ; k++) {
+    // console.log(table_number_From_user + ' X ' + k + ' = ' + table_number_From_user*k );
+    // console.log(`${table_number_From_user} x ${k} = ${table_number_From_user * k}`);
+// }
+
+// Task 5: Write a program to print items of the following array
+// using for loop:
+
+// fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”]
+// Output : 
+// apple
+// banana
+// mango
+// orange
+// strawberry
+// Element at index 0 is apple
+// Element at index 1 is banana
+// Element at index 2 is mango
+// Element at index 3 is orange
+// Element at index 4 is strawberry
+
+// var fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+
+// for (var index = 0; index < fruits.length; index++) {
+//     console.log(fruits[index]);   
+// }
+
+// for (var index1 = 0; index1 < fruits.length; index1++) {
+//     console.log("Elements at index " + index1 + " is " + fruits[index1]);   
+// }
+
+// Task 6: Generate the following series in your browser. See example output.
+// a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+// b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+// c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+// d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+// e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
+// Output : 
+// Counting:
+// 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+// Reverse counting:
+// 10, 9, 8, 7, 6, 5, 4, 3, 2, 1,
+// Even:
+// 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20,
+// Odd:
+// 1, 3, 5, 7, 9, 11, 13, 15, 17, 19,
+// Series:
+// 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k,
+
+// for (var m = 1; m <= 15; m++) {
+//     console.log(m);
+// }
+
+// for (var m = 15; m >= 1; m--) {
+//     console.log(m);
+// }
+
+// for (var m = 0; m <= 15; m+=2) {
+//     console.log(m);
+// }
+
+// for (var m = 1; m <= 15; m+=2) {
+//     console.log(m);
+// }
+
+// for (var m = 0; m <= 15; m+=2) {
+//     console.log(m + 'k');
+// }
+
+// Task 7: You have an array
+// A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”] Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given item is found in the list or not. Example:
+// var our_bakery_menu = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// prompt 1 from users :
+// Welcome to ABC Bakery. What do you want to order sir/ma'am?
+// var order_from_user = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?", "cake");
+// prompt 1 output : 
+// cookie is available at index 2 in our bakery
+// prompt 2 from users :
+// Welcome to ABC Bakery. What do you want to order sir/ma'am?
+// prompt 2 output : 
+// We are sorry. pastry is not available in our bakery
+
+// if (our_bakery_menu.includes(order_from_user)) {
+//     console.log("cookie is available in our bakery");
+// } else {
+//    console.log("We are sorry. this item is not available in our bakery");  
+// }
+// var index = our_bakery_menu.indexOf(order_from_user.toLowerCase());
+// if (index !== -1) {
+//     console.log(order_from_user + " is available at index " + index + " in our bakery");
+// } else {
+//     console.log("We are sorry. " + order_from_user + " is not available in our bakery");
+// }
+
+// Task 8: Write a program to identify the largest number in the given array. 
+// A = [24, 53, 78, 91, 12].
+// Array items: 24,53,78,91,12
+// The largest number is 91
+
+// var A =[24, 53, 78, 91, 12];
+// var largest = A[0];
+
+// for (var i = 1; i < A.length; i++) {
+//     if (A[i] > largest) {
+//         largest = A[i];
+//     }
+// }
+
+// console.log(largest);
+
+// Task 9: Write a program to identify the smallest number in the given array. 
+// A = [24, 53, 78, 91, 12]
+// Array items: 24,53,78,91,12
+// The smallest number is 12
+// var A =[24, 53, 78, 91, 12];
+// var smallest = A[0];
+
+// for (var i = 1; i < A.length; i++) {
+//     if (A[i] < smallest) {
+//         smallest = A[i];
+//     }
+// }
+
+// console.log(smallest);
+
+// Task 10: Write a program to print multiples of 5 ranging 1 to 100.
+// output :
+// 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100,
+for (var i = 1; i <= 20 ; i++) {
+    console.log(i*5);
+}
+
+
+// Task 1: 
+// Task 2: 
+// Task 3: 
+// Task 4: 
+// Task 5: 
+// Task 6: 
+// Task 7: 
+// Task 9: 
+// Task 10: 
 // Task 12: 
-
+// Task 13: 
